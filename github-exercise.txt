@@ -1,0 +1,182 @@
+GITHUB EXERCISE
+---------------	
+
+1. Create a local repository and add and commit some files
+
+- install & config git first  
+
+
+- Create a directory for your project 
+
+  mkdir my-repo-project
+  cd my-repo
+
+
+- Initialize a Local Git repository
+
+  git init
+
+
+- Create / add files
+
+  touch index.html style.css app.js
+
+
+- Add file/s to staging area
+
+  git add .
+
+
+- Commit the changes
+
+  git commit -m "add files to initial commit"
+
+- Check status
+
+  git status
+
+- View commit history
+
+  git log --oneline --reverse
+
+===========================================================
+
+
+2. Create a remote repository and push your code from the local repo to the remote
+
+
+- Create a Remote repository on GitHub
+
+  click "+" in upper-right hand corner and select "New repository"
+
+  Fill out the repository name of your choosing and then choose pubic or private, and click "Create repository"
+
+
+- Set up your local repository 
+
+  If a local Git repository already exists, then navigate to it. Otherwise, initialize a new one (git init)
+
+
+- Link your Local Repository to the Remote
+
+  Add the remote URL you got from GitHub (git remote add origin https://github.com/peterarcuri/my-repo.git)
+
+  Verify the remote repository (git remote -v)
+
+
+- Commit your changes locally
+
+  Add files to the staging area (git add .)
+  Commit the changes (git commit -m "Initial commit"
+
+
+- Push to the Remote Repository 
+
+  git push -u origin main
+
+
+- Verify the push on GitHub
+
+  Go back to the GitHub repository, and you should see all your files you pushed from your local repository 
+
+==============================================================================================================
+
+3. Create a local branch and add and commit some files
+
+
+- Create a local branch
+
+  git checkout -b <branch-name>
+  git checkout -b new-feature1
+
+
+
+- Add files
+
+  git add .
+
+
+- Commit the files
+
+  git commit -m "Add new feature"
+
+===============================================================================================================
+
+4. Push that local branch to GitHub to create a remote branch
+
+
+- Check current branch first
+
+  git branch
+
+
+- If not a current branch, switch to it
+
+  git checkout <your branch name>
+
+
+
+- Add changes
+
+  git add .
+
+
+
+- Commit changes
+
+  git commit -m "your commit message"
+
+
+
+- Push Local Branch to GitHub setting upstream (sets the remote branch as the default for future pushes and pulls
+
+  git push -u origin <your branch name>
+
+=================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
